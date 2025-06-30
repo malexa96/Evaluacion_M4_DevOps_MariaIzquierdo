@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import com.healthtrack.Usuario;
+
 
 public class UsuarioTest {
 
