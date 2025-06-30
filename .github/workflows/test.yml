@@ -1,4 +1,4 @@
-name: Pruebas Unitarias Java
+name: Pruebas Unitarias - Usuario Java
 
 on:
   push:
@@ -18,11 +18,8 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Verificar dependencias
-        run: mvn dependency:resolve
-
       - name: Compilar el proyecto
-        run: mvn compile
+        run: cd monitor-peso && mvn compile
 
-      - name: Ejecutar pruebas
-        run: mvn test
+      - name: Ejecutar pruebas unitarias
+        run: cd monitor-peso && mvn test
